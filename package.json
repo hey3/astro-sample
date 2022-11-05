@@ -1,0 +1,25 @@
+{
+  "name": "astro-sample",
+  "description": "Astro sample repository",
+  "version": "1.0.0",
+  "author": "hey3",
+  "keywords": [
+    "astro"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hey3/astro-sample"
+  },
+  "bugs": {
+    "url": "https://github.com/hey3/astro-sample/issues"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "1.6.3"
+  }
+}
