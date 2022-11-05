@@ -17,9 +17,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier . --check --plugin-search-dir=. --ignore-unknown",
+    "format:fix": "prettier . --write --plugin-search-dir=. --ignore-unknown"
   },
   "dependencies": {
     "astro": "1.6.3"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "prettier-plugin-astro": "0.7.0"
   }
 }
