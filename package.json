@@ -21,7 +21,8 @@
     "format": "prettier . --check --plugin-search-dir=. --ignore-unknown",
     "format:fix": "prettier . --write --plugin-search-dir=. --ignore-unknown",
     "lint": "eslint . --ext .js,.ts,.astro",
-    "lint:fix": "eslint . --fix --ext .js,.ts,.astro"
+    "lint:fix": "eslint . --fix --ext .js,.ts,.astro",
+    "typecheck": "astro check && tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
   "dependencies": {
     "astro": "1.6.3"
