@@ -1,0 +1,34 @@
+---
+import '../styles/reset.css'
+import '../styles/global.css'
+
+export type Props = {
+  title?: string | undefined
+}
+
+const { title = 'Astro Sample' } = Astro.props
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="container">
+    <slot name="header" />
+    <main>
+      <slot />
+    </main>
+    <slot name="footer" />
+  </body>
+</html>
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #080808;
+  }
+</style>

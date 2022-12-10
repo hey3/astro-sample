@@ -1,0 +1,33 @@
+---
+import GlobalLayout from '../layouts/GlobalLayout.astro'
+---
+
+<GlobalLayout>
+  <div class="container">
+    <h1 class="oops">404</h1>
+    <p>Uh Oh! We couldn't find the page you were looking for</p>
+    <a class="link" href="/">Return Home</a>
+  </div>
+</GlobalLayout>
+<style>
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #080808;
+    color: #efefef;
+  }
+  .oops {
+    font-size: 104px;
+    font-weight: bold;
+  }
+  .link {
+    padding: 16px 32px;
+    margin-top: 24px;
+    color: #fff;
+    background-color: #1473e6;
+    border-radius: 8px;
+  }
+</style>
